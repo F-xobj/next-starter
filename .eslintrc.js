@@ -3,11 +3,13 @@ module.exports = {
         node: true,
         es2021: true,
     },
+    ignorePatterns: ["storybook-static", "stories"],
     extends: [
         "eslint:recommended",
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
         "prettier",
+        "plugin:storybook/recommended",
     ],
     parser: "@typescript-eslint/parser",
     parserOptions: {
