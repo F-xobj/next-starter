@@ -1,7 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
-import { ar } from "../../locales/ar";
-import { en } from "../../locales/en";
+import { ar, en } from "@locales/index";
 
 export const Typography = () => {
     const router = useRouter();
@@ -21,7 +20,7 @@ export const Typography = () => {
     const t = locale === "en" ? en : ar;
     return (
         <h1 onClick={handelLanguageToggle}>
-            toggle to change language : {t?.Hello || "WTF"}
+            toggle to change language : {t.Hello}
         </h1>
     );
 };

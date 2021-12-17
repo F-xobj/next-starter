@@ -1,8 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import { Typography } from "@components/Typography";
+
 import styles from "../styles/Home.module.css";
-import { Typography } from "../components/Typography";
 
 const Home: NextPage = () => {
     return (
